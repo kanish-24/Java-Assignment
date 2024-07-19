@@ -1,17 +1,18 @@
-package animals;
+package methodOverriding;
 
 public class Main {
 	
-	 // Main method to demonstrate the use of super keyword
+	// Main method to demonstrate method overriding
     public static void main(String[] args) {
-        // Creating an object of the Dog class
-        Dog dog = new Dog("Buddy", "Canine", "Golden Retriever");
+        // Creating objects of Shape, Circle, and Square
+        Shape shape = new Shape();
+        Shape circle = new Circle();
+        Shape square = new Square();
 
-        // Displaying the details of the dog
-        dog.displayDetails();
-
-        // Making the dog sound
-        dog.makeSound();
+        // Calling the draw method on each object
+        shape.draw();
+        circle.draw();
+        square.draw();
     }
-
+	
 }
